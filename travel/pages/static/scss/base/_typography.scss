@@ -1,0 +1,42 @@
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.6;
+  
+}
+
+.heading-primary{
+    color: #f7cecf;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 5rem;
+    mix-blend-mode: difference;
+  
+    &--main{
+        display: block;
+        font-size: 6rem;
+        letter-spacing: 3.5rem;
+        margin-bottom: 4rem;
+        animation: moveInLeft 2s ease-out;
+  
+    }
+  
+    &--sub{
+        display: block;
+        font-size: 4rem;
+        letter-spacing: 2.6rem;
+        animation: moveInRight 2s ease-out;
+  
+    }
+  }
+  
+  .text-box{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    mix-blend-mode: overlay;
+    outline: none;
+  }

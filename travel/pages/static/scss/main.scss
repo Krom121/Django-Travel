@@ -6,11 +6,12 @@
 @import "base/typography";
 @import "base/utilities";
 @import "componentss/button";
+@import "componentss/adventure_box";
 @import "layoutss/grid";
 @import "layoutss/header";
 @import "layoutss/navbar";
 @import "layoutss/footer";
 @import "pagess/landing";
-@import "pagess/about";
+@import "pagess/about.scss";
 @import "pagess/blog";
 @import "pagess/contact";

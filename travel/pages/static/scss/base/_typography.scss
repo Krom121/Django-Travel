@@ -12,6 +12,11 @@ body{
     backface-visibility: hidden;
     margin-bottom: 5rem;
     mix-blend-mode: difference;
+
+    @include respond(phone){
+      letter-spacing: 1rem;
+      font-size: 5rem;
+  }
   
     &--main{
         display: block;
@@ -27,11 +32,16 @@ body{
         font-size: 4rem;
         letter-spacing: 2.6rem;
         animation: moveInRight 2s ease-out;
+
+        @include respond(phone){
+          letter-spacing: .5rem;
+          font-size: 3rem;
+      }
   
     }
   }
   
-  .text-box{
+.text-box{
     position: absolute;
     top: 70%;
     left: 50%;
@@ -40,3 +50,20 @@ body{
     mix-blend-mode: overlay;
     outline: none;
   }
+
+
+.secondary-heading {
+    font-size: 5rem;
+    letter-spacing: 1.5rem;
+    margin-bottom: 4rem;
+    color: #eee;
+    mix-blend-mode: overlay;
+    outline: none;
+}
+
+
+.heading-tertiary{
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}

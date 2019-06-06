@@ -1,0 +1,39 @@
+.feature-box {
+    font-size: 1.4rem;
+    padding: 3rem;
+    text-align: center;
+
+    &__icon {
+        font-size: 6rem;
+        background-image: linear-gradient(to left bottom,
+        rgba(#f9dad5, 60%), 
+        rgba(#fd969d, 70%),
+        rgba(#f9dad5, 70%));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        outline: none;
+    }
+
+    &_heading {
+        background-image: linear-gradient(to right bottom,
+        rgba(#f9dad5, 70%), 
+        rgba(#fd969d, 80%),
+        rgba(#f9dad5, 70%));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        outline: none;
+    }
+
+    &__text {
+        background-image: linear-gradient(to left bottom,
+        rgba(#f9dad5, 70%), 
+        rgba(#fd969d, 60%),
+        rgba(#f9dad5, 70%));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        outline: none;
+    }
+}

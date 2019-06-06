@@ -36,6 +36,10 @@ body {
   backface-visibility: hidden;
   margin-bottom: 5rem;
   mix-blend-mode: difference; }
+  @media (max-width: 37.5em) {
+    .heading-primary {
+      letter-spacing: 1rem;
+      font-size: 5rem; } }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
@@ -47,6 +51,10 @@ body {
     font-size: 4rem;
     letter-spacing: 2.6rem;
     animation: moveInRight 2s ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem;
+        font-size: 3rem; } }
 
 .text-box {
   position: absolute;
@@ -56,6 +64,46 @@ body {
   text-align: center;
   mix-blend-mode: overlay;
   outline: none; }
+
+.secondary-heading {
+  font-size: 5rem;
+  letter-spacing: 1.5rem;
+  margin-bottom: 4rem;
+  color: #eee;
+  mix-blend-mode: overlay;
+  outline: none; }
+
+.heading-tertiary {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.center-text {
+  text-align: center; }
+
+.margin-bottom-sm {
+  margin-bottom: 2rem; }
+  @media (max-width: 56.25em) {
+    .margin-bottom-sm {
+      margin-bottom: 1rem; } }
+
+.margin-bottom-lg {
+  margin-bottom: 8rem; }
+  @media (max-width: 56.25em) {
+    .margin-bottom-lg {
+      margin-bottom: 4rem; } }
+
+.margin-top-lg {
+  margin-top: 8rem; }
+  @media (max-width: 56.25em) {
+    .margin-top-lg {
+      margin-top: 4rem; } }
+
+.margin-top-huge {
+  margin-top: 10rem; }
+  @media (max-width: 56.25em) {
+    .margin-top-huge {
+      margin-bottom: 5rem; } }
 
 .adventure_box-0 {
   grid-column: 1 / 2;
@@ -90,6 +138,30 @@ body {
 
 .adventure_image {
   width: 100%; }
+
+.feature-box {
+  font-size: 1.4rem;
+  padding: 3rem;
+  text-align: center; }
+  .feature-box__icon {
+    font-size: 6rem;
+    background-image: linear-gradient(to left bottom, rgba(249, 218, 213, 0.6), rgba(253, 150, 157, 0.7), rgba(249, 218, 213, 0.7));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    outline: none; }
+  .feature-box_heading {
+    background-image: linear-gradient(to right bottom, rgba(249, 218, 213, 0.7), rgba(253, 150, 157, 0.8), rgba(249, 218, 213, 0.7));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    outline: none; }
+  .feature-box__text {
+    background-image: linear-gradient(to left bottom, rgba(249, 218, 213, 0.7), rgba(253, 150, 157, 0.6), rgba(249, 218, 213, 0.7));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    outline: none; }
 
 .row {
   max-width: 114rem;
@@ -167,11 +239,34 @@ body {
 
 .feature-adventure {
   width: 100%;
-  background-color: rgba(65, 64, 92, 0.8);
+  background-image: linear-gradient(to top, rgba(120, 130, 184, 0.5), #3d3e5b);
   padding: 15rem 0;
   display: grid;
   grid-gap: .3rem;
   grid-template-columns: 30rem 30rem 30rem 30rem;
-  justify-content: center; }
+  justify-content: center;
+  -webkit-filter: hue-rotate(15deg);
+  filter: hue-rotate(15deg); }
+
+.feature-section {
+  padding: 15rem 0;
+  background-image: linear-gradient(to bottom, rgba(120, 130, 184, 0.5), #3d3e5b, rgba(61, 62, 90, 0.5));
+  -webkit-filter: hue-rotate(10deg);
+  filter: hue-rotate(10deg); }
+
+.about-section {
+  height: 100vh;
+  padding: 15rem 0;
+  background-image: url(../img/adventure.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: hue-rotate(190deg) grayscale(20%);
+  filter: hue-rotate(190deg) grayscale(20%); }
+  .about-section__text {
+    text-align: center;
+    color: #ff2300;
+    mix-blend-mode: darken;
+    outline: none;
+    font-size: 1.6rem; }
 
 /*# sourceMappingURL=main.css.map */

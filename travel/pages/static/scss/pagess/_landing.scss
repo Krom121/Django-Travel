@@ -1,9 +1,41 @@
 .feature-adventure {
     width: 100%;
-    background-color: rgba(65,64,92, .8);
+    background-image: linear-gradient(to top,
+    rgba(#7882b8, 0.5), 
+    rgba(#3d3e5b, 1));
     padding: 15rem 0;
     display: grid;
     grid-gap: .3rem;
     grid-template-columns: 30rem 30rem 30rem 30rem;
     justify-content: center;
+    -webkit-filter: hue-rotate(15deg);
+    filter: hue-rotate(15deg);
+}
+
+.feature-section {
+    padding: 15rem 0;
+    background-image: linear-gradient(to bottom,
+    rgba(#7882b8, 0.5), 
+    rgba(#3d3e5b, 1),
+    rgba(#3d3e5a, 0.5));
+    -webkit-filter: hue-rotate(10deg);
+    filter: hue-rotate(10deg);
+}
+
+.about-section {
+    height: 100vh;
+    padding: 15rem 0;
+    background-image: $url;
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: hue-rotate(190deg) grayscale(20%);
+    filter: hue-rotate(190deg) grayscale(20%);
+
+    &__text {
+        text-align: center;
+        color: #ff2300;
+        mix-blend-mode: darken;
+        outline: none;
+        font-size: 1.6rem;
+    }
 }
